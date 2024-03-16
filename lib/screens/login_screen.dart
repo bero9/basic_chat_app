@@ -6,6 +6,7 @@ import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import '../components/custem_TextField.dart';
 import '../components/custom_button.dart';
 import '../components/custom_snackbar.dart';
+import 'chat_screan.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({super.key,});
