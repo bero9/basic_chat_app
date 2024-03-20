@@ -1,5 +1,6 @@
 
 import 'package:basic_chat_app/Constants.dart';
+import 'package:basic_chat_app/screens/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -132,7 +133,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.pop(context);
+                          Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return RegisterScreen();
+                          }));
                         },
                         child: Text(
                           'Register ',
